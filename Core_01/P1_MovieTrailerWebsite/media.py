@@ -1,3 +1,4 @@
+# Import necessary libraries
 import webbrowser
 
 class Movie():
@@ -14,8 +15,12 @@ class Movie():
         '''
         self.title = _title
         self.storyline = _storyline
-        self.poster_image_url = _poster
-        self.trailer_youtube_url = _trailer
+        self.poster = _poster
+        self.trailer = _trailer
 
     def show_trailer(self):
-        webbrowser.open(self.trailer_youtube_url)
+        '''
+        Launches video window
+        :return:
+        '''
+        webbrowser.open(self.trailer)
