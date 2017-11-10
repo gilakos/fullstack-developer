@@ -27,7 +27,9 @@ body {
     margin-bottom: 1.00rem;
 }
 .article_resp{
-    max-width: 33%;
+    display: inline-block;
+    max-width: 32%;
+    min-width: 300px;
     margin: .25rem;
 }
 

@@ -41,18 +41,24 @@ class MessageHandler(BaseHTTPRequestHandler):
         memory.append(message)
 
         # 1. Send a 303 redirect back to the root page.
+        self.send_response(303)
+        # Add header
+        self.send_header('Location', '/')
+        self.end_headers()
 
     def do_GET(self):
         # First, send a 200 OK response.
         self.send_response(200)
 
         # Then send headers.
-        self.send_header('Content-type', 'text/html; charset=utf-8')
+        self.send_header('Content-type', 'text/html; charset=utf-8;')
         self.end_headers()
 
         # 2. Put the response together out of the form and the stored messages.
+        mesg = form.format("\n".join(memory))
 
         # 3. Send the response.
+        self.wfile.write(mesg.encode())
 
 if __name__ == '__main__':
     server_address = ('', 8000)

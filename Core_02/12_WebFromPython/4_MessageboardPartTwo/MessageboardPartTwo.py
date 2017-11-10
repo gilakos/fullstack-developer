@@ -35,6 +35,15 @@ class MessageHandler(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(message.encode())
 
+    def do_GET(self):
+        # Send a 200 message
+        self.send_response(200)
+        # Send headers
+        self.send_header('Content-type', 'text/html; charset=utf-8')
+        self.end_headers()
+        # Send encoded message
+        self.wfile.write(form.encode())
+
 if __name__ == '__main__':
     server_address = ('', 8000)
     httpd = HTTPServer(server_address, MessageHandler)
