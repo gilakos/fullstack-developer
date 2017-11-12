@@ -1,4 +1,4 @@
-# Fullstack Developer Nanodegree
+# Fullstack Developer Nanodegree @ Udacity
 ## Gil Akos
 
 ### Project 1: Movie Trailer Website

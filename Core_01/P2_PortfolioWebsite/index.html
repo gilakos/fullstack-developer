@@ -7,22 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Portfolio Website // Project 2 // FSND Udacity">
     <meta name="author" content="Gil Akos">
-    <meta name="template_referance" content="https://startbootstrap.com/template-overviews/portfolio-item/">
     <!-- Bootstrap core CSS -->
-    <link href="core/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="core/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <title>Portfolio // Gil Akos</title>
     <!-- Custom styles for this page -->
     <link href="css/portfolio-item.css" rel="stylesheet">
+    <!-- Font Awesome for Social Icons -->
+    <link rel="stylesheet" href="core/font-awesome-4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
     <header class="container">
         <!-- Portfolio Heading -->
         <div class="row">
-            <div class="folio_header_logo">
-                <img class="header_logo" src="assets/ASTRA-Logo-Blue.png" alt="">
+            <div class="col folio_header_logo">
+                <img class="header_logo" src="assets/ASTRA-Logo-Blue.png" alt="Astra logo">
             </div>
-            <div class="folio_header_text">
+            <div class="col folio_header_text">
                 <h1 class="header_text header_maintext">Gil Akos</h1>
                 <h4 class="header_text header_subtext">Astra Project Portfolio</h4>
             </div>
@@ -30,29 +32,29 @@
         <hr class="header_line">
     </header>
     <!-- Page Content -->
-    <div class="container">
+    <div class="main container">
         <!-- Main Image Row -->
         <div class="row">
             <div class="folio_main">
-                <img class="img-fluid" src="assets/Astra-Main.png" alt="">
+                <img class="img-fluid" src="assets/Astra-Main.png" alt="Astra App Graphic">
             </div>
         </div>
         <!-- /.row -->
         <!-- Related Projects Row -->
         <h3 class="featured_break">Featured Work</h3>
         <div class="row">
-            <article class="article_resp">
-                <img class="img-fluid" src="assets/Astra-Beta.png" alt="">
+            <article class="col article_resp">
+                <img class="img-fluid" src="assets/Astra-Beta.png" alt="Astra Beta App">
                 <h4 class="project_text project_title">Beta Web App</h4>
                 <p class="project_text project_link">http://bit.ly/2yt0DYN</p>
             </article>
-            <article class="article_resp">
-                <img class="img-fluid" src="assets/Astra-Glance.png" alt="">
+            <article class="col article_resp">
+                <img class="img-fluid" src="assets/Astra-Glance.png" alt="Astra Glance Chrome Extension">
                 <h4 class="project_text project_title">Glance Chrome Extension</h4>
                 <p class="project_text project_link">http://bit.ly/2zzK3Km</p>
             </article>
-            <article class="article_resp">
-                <img class="img-fluid" src="assets/Astra-LSTMs.png" alt="">
+            <article class="col article_resp">
+                <img class="img-fluid" src="assets/Astra-LSTMs.png" alt="Long Short-term Memory Research">
                 <h4 class="project_text project_title">Forecasting Research</h4>
                 <p class="project_text project_link">http://bit.ly/2iNErSF</p>
             </article>
@@ -63,7 +65,13 @@
     <!-- Footer -->
     <footer class="py-5 bg-dark">
         <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; Gil Akos 2017</p>
+            <div class="row footer_info">
+                <p class="m-0 text-center text-white">Copyright &copy; Gil Akos 2017</p>
+            </div>
+            <div class="row footer_info">
+                <a href="https://twitter.com/gil_akos" target="_blank"><i class="fa fa-twitter fa-inverse fa-lg"></i></a>
+                <a href="https://medium.com/@gil_akos" target="_blank"><i class="fa fa-medium fa-inverse fa-lg"></i></a>
+            </div>
         </div>
         <!-- /.container -->
     </footer>
