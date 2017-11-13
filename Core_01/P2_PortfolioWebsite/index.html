@@ -21,43 +21,58 @@
     <header class="container">
         <!-- Portfolio Heading -->
         <div class="row">
-            <div class="col folio_header_logo">
+            <div class="col-6 folio_header justify-content-start">
                 <img class="header_logo" src="assets/ASTRA-Logo-Blue.png" alt="Astra logo">
             </div>
-            <div class="col folio_header_text">
+            <div class="col-6 folio_header justify-content-end">
                 <h1 class="header_text header_maintext">Gil Akos</h1>
                 <h4 class="header_text header_subtext">Astra Project Portfolio</h4>
             </div>
         </div> 
-        <hr class="header_line">
+        <div class="row no-gutters">
+            <div class="col">
+                <hr class="header_line">
+            </div>
+        </div>
+        
     </header>
+    <!-- Page Content -->
     <!-- Page Content -->
     <div class="main container">
         <!-- Main Image Row -->
-        <div class="row">
-            <div class="folio_main">
+        <div class="row no-gutters">
+            <div class="col folio_main justify-content-center">
                 <img class="img-fluid" src="assets/Astra-Main.png" alt="Astra App Graphic">
             </div>
         </div>
         <!-- /.row -->
         <!-- Related Projects Row -->
-        <h3 class="featured_break">Featured Work</h3>
+        <div class="row no-gutters">
+            <div class="col">
+                <h3 class="featured_break">Featured Work</h3>
+            </div>
+        </div>
         <div class="row">
-            <article class="col article_resp">
+            <article class="col article_resp justify-content-center">
                 <img class="img-fluid" src="assets/Astra-Beta.png" alt="Astra Beta App">
                 <h4 class="project_text project_title">Beta Web App</h4>
                 <p class="project_text project_link">http://bit.ly/2yt0DYN</p>
             </article>
-            <article class="col article_resp">
+            <article class="col article_resp justify-content-center">
                 <img class="img-fluid" src="assets/Astra-Glance.png" alt="Astra Glance Chrome Extension">
                 <h4 class="project_text project_title">Glance Chrome Extension</h4>
                 <p class="project_text project_link">http://bit.ly/2zzK3Km</p>
             </article>
-            <article class="col article_resp">
+            <article class="col article_resp justify-content-center">
                 <img class="img-fluid" src="assets/Astra-LSTMs.png" alt="Long Short-term Memory Research">
                 <h4 class="project_text project_title">Forecasting Research</h4>
                 <p class="project_text project_link">http://bit.ly/2iNErSF</p>
             </article>
+        </div>
+        <div class="row">
+            <div class="col">
+                <br>
+            </div>
         </div>
         <!-- /.row -->
     </div>
@@ -65,12 +80,16 @@
     <!-- Footer -->
     <footer class="py-5 bg-dark">
         <div class="container">
-            <div class="row footer_info">
-                <p class="m-0 text-center text-white">Copyright &copy; Gil Akos 2017</p>
+            <div class="row justify-content-center">
+                <div class="col justify-content-center">
+                    <p class="m-0 text-center text-white">Copyright &copy; Gil Akos 2017</p>
+                </div>
             </div>
-            <div class="row footer_info">
-                <a href="https://twitter.com/gil_akos" target="_blank"><i class="fa fa-twitter fa-inverse fa-lg"></i></a>
-                <a href="https://medium.com/@gil_akos" target="_blank"><i class="fa fa-medium fa-inverse fa-lg"></i></a>
+            <div class="row justify-content-center">
+                <div class="col footer_info">
+                    <a href="https://twitter.com/gil_akos" target="_blank"><i class="fa fa-twitter fa-inverse fa-lg fa_custom"></i></a>
+                    <a href="https://medium.com/@gil_akos" target="_blank"><i class="fa fa-medium fa-inverse fa-lg fa_custom"></i></a>
+                </div>
             </div>
         </div>
         <!-- /.container -->
