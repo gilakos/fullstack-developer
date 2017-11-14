@@ -1,0 +1,15 @@
+Results of running logs_analysis.py:
+
+* Report 1. What are the most popular three articles of all time? *
+"Candidate Is Jerk, Alleges Rival" -- 338647 views
+"Bears Love Berries, Alleges Bear" -- 253801 views
+"Bad Things Gone, Say Good People" -- 170098 views
+--
+* Report 2. Who are the most popular article authors of all time? *
+Ursula La Multa -- 507594 total views
+Rudolf Von Treppenwitz -- 423457 total views
+Anonymous Contributor -- 170098 total views
+Markoff Chaney -- 84557 total views
+--
+* Report 3. On which days did more than 1% of requests lead to errors? *
+2016-July-17 -- 2.2627 %

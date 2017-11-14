@@ -100,8 +100,8 @@ analysis_reports = [report_1, report_2, report_3]
 def generate_analysis(_database, _reports):
     '''
     Function to connect to database and run analysis
-    :param _database: Name of the database
-    :param _reports: PSQL formatted query and view creation command
+    :param _database: Name of the database as string
+    :param _reports: PSQL formatted query and view creation command(s) as list of string(s)
     :return: None - prints query results
     '''
 
@@ -139,9 +139,9 @@ def generate_analysis(_database, _reports):
 def print_report(_results, _type):
     '''
     Function to print report based on type
-    :param _results:
-    :param _type:
-    :return:
+    :param _results: Report results as list
+    :param _type: Type of formatting for printing to termainal as integer
+    :return: None - prints formatted results
     '''
     # If results are present
     if _results:
