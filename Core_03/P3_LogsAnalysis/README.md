@@ -29,6 +29,32 @@ Table architecture of `news` database and pseudo code of reports defined in lead
 
 Sample output stored in `analysis.txt`.
 
+#### Views 
+Three views are automatically created in `logs_analysis.py` and are defined as:
+```
+view_3a = "Create view TotalViews as " \
+          "select time ::timestamp::date as date, count(*) as tot_views " \
+          "from log " \
+          "group by date " \
+          "order by tot_views desc; "
+
+view_3b = "Create view ErrViews as " \
+          "select time ::timestamp::date as date, count(*) as err_views " \
+          "from log " \
+          "where status = '404 NOT FOUND' " \
+          "group by date " \
+          "order by err_views desc; "
+
+view_3c = "Create view ErrDaily as " \
+          "select ErrViews.date, " \
+          "cast(ErrViews.err_views as decimal) " \
+          "/ cast(TotalViews.tot_views as decimal) " \
+          "as err_daily " \
+          "from TotalViews join ErrViews " \
+          "on TotalViews.date = ErrViews.date " \
+          "order by err_daily desc; "
+```
+
 #### Dependencies + References
 1. [Psql](http://postgresguide.com/utilities/psql.html)
 2. [Psycopg2](http://initd.org/psycopg/)
